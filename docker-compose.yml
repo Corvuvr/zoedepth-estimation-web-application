@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  flask_app:
+    container_name: depth_estimation_container
+    image: corvuvr/flask_live_app:1.0.0
+    build: .
+    ports:
+      - "4000:4000"
+volumes:
+  pgdata: {}
