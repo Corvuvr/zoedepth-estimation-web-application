@@ -17,7 +17,7 @@ P.s.: to restart, run `run.bat` again.
 1. POST `http://localhost:4000/`
    - Uploads an inage to the server for depth estimation.
    - Image is transferred as binary in the body of the request.
-   - Postman collection link (import collection via 'Import' button): ``.
+   - Postman collection link: `https://app.getpostman.com/join-team?invite_code=52bf2d60dfe63936e45f22319021a239`.
 # На русском
 ## Использование 
 1. Запустить Docker.
@@ -33,4 +33,4 @@ P.s.: для повторного запуска ещё раз запустит�
 1. POST `http://localhost:4000/`
    - Загружает изображение на сервер для обработки.
    - Изображение передаётся в бинарном виде в теле запроса.
-   - Ссылка на коллекцию Postman (добавить коллекцию с помощью кнопки `Import`): ``.
+   - Ссылка на коллекцию Postman: `https://app.getpostman.com/join-team?invite_code=52bf2d60dfe63936e45f22319021a239`.
