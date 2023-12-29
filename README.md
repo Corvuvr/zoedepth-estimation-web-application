@@ -12,7 +12,7 @@ This web-application will let you get depth map from single image.
 
 P.s.: to restart, run `run.bat` again.
 
-# zoedepth-estimation-web-application-rus
+# На русском
 ## Использование 
 1. Запустить Docker.
 2. Запустить `run.bat`.
