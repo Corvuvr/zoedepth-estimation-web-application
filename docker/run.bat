@@ -1,1 +1,0 @@
-docker pull python:3.8-slim-bullseye && docker compose up -d flask_app && docker compose build && docker compose up flask_app
