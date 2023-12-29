@@ -1,7 +1,11 @@
 # zoedepth-estimation-web-application
 This web-application will let you get depth map from single image.
 
+<<<<<<< HEAD
 ![alt text](https://github.com/Corvuvr/zoedepth-estimation-web-application/blob/dev/src/uploads/hat.png?raw=true)
+=======
+![alt text](https://github.com/Corvuvr/zoedepth-estimation-web-application/blob/main/src/uploads/hat.png?raw=true)
+>>>>>>> b88c101 (Update README.md)
 ## Usage
 1. Launch Docker.
 2. Run `run.bat`.
