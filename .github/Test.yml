@@ -1,0 +1,5 @@
+name: Start tests and deploy
+
+on:
+  push:
+    branches: [main]
