@@ -21,7 +21,9 @@ jobs:
       run:  pip install -r src/requirements.txt 
     - name: GetModel 
       run:  python ./src/getmodel.py
-    - name: ActivateFlas
+    - name: ActivateFlask
       run:  python src/app.py
-    - name: RunFlask 
-      run:  flask --app src/app.py run --host=0.0.0.0 --port=4000
+    # - name: RunFlask 
+    #   run:  flask --app src/app.py run --host=0.0.0.0 --port=4000
+    - name: TestModel
+      run:  python src/test_getdepth.py
