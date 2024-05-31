@@ -9,3 +9,11 @@ jobs:
       uses: actions/checkout@v4.1.6
     - name: Dependencies
       run: pip install -r src/requirements.txt 
+    - name: GetModel 
+      run: python ./getmodel.py
+  lauch:
+    runs-on: windows-latest
+    needs: load
+    steps:  
+    - name: RunFlask
+      run: python src/app.py && flask run --host=0.0.0.0
