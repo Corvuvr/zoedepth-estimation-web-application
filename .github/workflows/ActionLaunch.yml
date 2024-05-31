@@ -2,7 +2,9 @@ name: Start tests and deploy
 on:
   push:
 jobs:
-  load:                
+  load:
+    runs-on: windows-latest
+    steps:                
     - name: Checkout       
       uses: actions/checkout@v4.1.6
     - name: Dependencies
