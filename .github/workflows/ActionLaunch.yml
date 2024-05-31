@@ -14,9 +14,9 @@ jobs:
   lauch:
     runs-on: windows-latest
     needs: load
-    steps:
-      uses: actions/checkout@v4.1.6
+    steps:    
     - name: Checkdir
+      uses: actions/checkout@v4.1.6
       run:  dir 
     - name: ActivateFlask
       run:  python src/app.py
