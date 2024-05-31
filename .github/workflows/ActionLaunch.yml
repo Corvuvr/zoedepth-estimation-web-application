@@ -17,9 +17,11 @@ jobs:
     steps:    
     - name: Checkout       
       uses: actions/checkout@v4.1.6
-    - name: Checkdir
-      run:  dir 
-    - name: ActivateFlask
+    - name: CheckDependencies
+      run:  pip list 
+    - name: LoadFlask
+      run:  pip install Flask Flask-Uploads Flask-WTF
+    - name: ActivateFlas
       run:  python src/app.py
     - name: RunFlask 
       run:  flask --app src/app.py run --host=0.0.0.0 --port=4000
