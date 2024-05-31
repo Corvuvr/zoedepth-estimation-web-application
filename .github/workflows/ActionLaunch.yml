@@ -10,7 +10,7 @@ jobs:
     - name: Dependencies
       run: pip install -r src/requirements.txt 
     - name: GetModel 
-      run: python ./getmodel.py
+      run: python ./src/getmodel.py
   lauch:
     runs-on: windows-latest
     needs: load
