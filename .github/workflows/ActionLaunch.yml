@@ -15,5 +15,9 @@ jobs:
     runs-on: windows-latest
     needs: load
     steps:
-    - name: RunFlask
-      run:  dir && python ${GITHUB_WORKSPACE}/src/app.py && flask --app ${GITHUB_WORKSPACE}/src/app.py run --host=0.0.0.0 --port=4000
+    - name: Checkdir
+      run:  dir && cd ${GITHUB_WORKSPACE} && dir 
+    - name: ActivateFlask
+      run:  python ${GITHUB_WORKSPACE}/src/app.py
+    - name: RunFlask 
+      run:  flask --app ${GITHUB_WORKSPACE}/src/app.py run --host=0.0.0.0 --port=4000
