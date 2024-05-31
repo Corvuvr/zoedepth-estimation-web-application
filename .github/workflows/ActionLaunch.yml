@@ -14,6 +14,10 @@ jobs:
   lauch:
     runs-on: windows-latest
     needs: load
-    steps:  
+    steps:
+    - name: CheckDir
+      run:  dir
+    - name: CheckSrcDir
+      run:  cd src && dir 
     - name: RunFlask
-      run: python src/app.py && flask run --host=0.0.0.0
+      run:  python src/app.py && flask --app src/app.py run --host=0.0.0.0 --port=4000
