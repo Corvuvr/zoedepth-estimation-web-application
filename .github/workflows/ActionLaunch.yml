@@ -3,7 +3,7 @@ on:
   push:
 jobs:
   load:                
-  - name: Checkout       
-    uses: actions/checkout@v4.1.6
-  - name: Dependencies
-    run: pip install -r src/requirements.txt 
+    - name: Checkout       
+      uses: actions/checkout@v4.1.6
+    - name: Dependencies
+      run: pip install -r src/requirements.txt 
