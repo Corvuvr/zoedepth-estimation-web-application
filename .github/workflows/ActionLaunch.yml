@@ -15,8 +15,9 @@ jobs:
     runs-on: windows-latest
     needs: load
     steps:    
-    - name: Checkdir
+    - name: Checkout       
       uses: actions/checkout@v4.1.6
+    - name: Checkdir
       run:  dir 
     - name: ActivateFlask
       run:  python src/app.py
